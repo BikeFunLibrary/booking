@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-logo-text {
+  text-align: center;
+  color: dimgray;
+}
+
+main {
+  margin-left: 94px;
+  margin-right: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-bar-links {
+  text-align: center;
+}
+
+.nav-bar-links li {
+  display: inline;
+  padding: 23px 10px;
+}
+
+p {
+  color: dimgray;
+}
+
+.notice {
+  font-weight: bolder;
+  color: red;
+  text-align: center;
+}
+
+.lib-items-title {
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+.header-logo-text {
+  font-size: 60px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.items-list  li:before {
+  content: "-";
+  }
+
+.col-4, .col-8, {
+  float: left;
+
+  /* Gutters:
+   * Each column is padded by half-a-gutter on each side,
+   *
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
+   *
+   */
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-4, .col-8, {
+  width: 100%;
+}
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  /* 4 columns */
+  .col-4 {
+    width: 33.3%;
+  }
+
+  /* 8 columns */
+  .col-8 {
+    width: 66.6%;
+  }
+}
