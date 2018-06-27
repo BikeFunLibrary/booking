@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+ .main-content-container {
+   width: 100%;
+ }
+
+/* Mobile defaults */
+.main-column, .sidebar-column, {
+      /* float: left; */
+
+  width: 100%;
+}
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  /* 4 columns */
+  .sidebar-column {
+    float: left;
+    display: inline-block;
+    width: 33.3%;
+  }
+  .main-column {
+    float: left;
+    display: inline-block;
+    width: 66.6%;
+  }
+}
